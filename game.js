@@ -263,7 +263,7 @@ function draw() {
 
   // Overlay agar game shuru nahi hua
   if (!started && !dead) {
-    drawOverlay('Snake Game 🐍', 'Start dabao ya Space press karo', c.textAccent, c);
+    drawOverlay('Snake Game 🐍', 'Start dabao ', c.textAccent, c);
   }
 }
 
