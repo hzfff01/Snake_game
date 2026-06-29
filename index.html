@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="game-wrap">
+
+    <!-- Header -->
+    <h1 class="game-title">🐍 Snake Game</h1>
+
+    <!-- Score Bar -->
+    <div id="score-bar">
+      <div class="stat">
+        <div class="stat-label">Score</div>
+        <div class="stat-val" id="score">0</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Best</div>
+        <div class="stat-val" id="best">0</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Level</div>
+        <div class="stat-val" id="level">1</div>
+      </div>
+    </div>
+
+    <!-- Game Canvas -->
+    <div id="canvas-wrap">
+      <canvas id="canvas" width="400" height="400"></canvas>
+    </div>
+
+    <!-- Control Buttons -->
+    <div id="controls">
+      <button class="ctrl primary" id="btn-start">▶ Start</button>
+      <button class="ctrl" id="btn-pause">⏸ Pause</button>
+      <button class="ctrl" id="btn-restart">↺ Restart</button>
+    </div>
+
+    <!-- D-Pad for Mobile -->
+    <div id="dpad">
+      <div></div>
+      <button id="up" aria-label="Up">↑</button>
+      <div></div>
+      <button id="left" aria-label="Left">←</button>
+      <div></div>
+      <button id="right" aria-label="Right">→</button>
+      <div></div>
+      <button id="down" aria-label="Down">↓</button>
+      <div></div>
+
+
+  <script src="game.js"></script>
+</body>
+</html>
